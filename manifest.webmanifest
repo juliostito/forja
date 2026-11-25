@@ -1,0 +1,16 @@
+{
+  "name": "Forja 4×",
+  "short_name": "Forja",
+  "description": "Tu entrenador personal: upper/lower 4×, progresión, hábitos y nutrición.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1217",
+  "theme_color": "#0f1217",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

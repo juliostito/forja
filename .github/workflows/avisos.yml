@@ -1,0 +1,28 @@
+name: Avisos Forja
+on:
+  schedule:
+    # Hora UTC. Cada aviso tiene dos ejecuciones (horario de verano e invierno de Chile); el script elige la correcta.
+    - cron: "20 9 * * *"    # mañana (6:20 CLST)
+    - cron: "20 10 * * *"   # mañana (6:20 CLT)
+    - cron: "45 22 * * *"   # tarde (19:45 CLST)
+    - cron: "45 23 * * *"   # tarde (19:45 CLT)
+    - cron: "40 12 * * 0"   # domingo (9:40 CLST)
+    - cron: "40 13 * * 0"   # domingo (9:40 CLT)
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Tipo de aviso para probar (test, morning, evening, sunday)"
+        default: "test"
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm install --no-save web-push@3.6.7
+      - run: node scripts/send.mjs "${{ github.event.inputs.kind || 'auto' }}"
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          PUSH_SUBSCRIPTIONS: ${{ secrets.PUSH_SUBSCRIPTIONS }}
