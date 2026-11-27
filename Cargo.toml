@@ -1,0 +1,28 @@
+[package]
+name = "forja-demo"
+version = "0.1.0"
+edition = "2021"
+description = "Milestone 1 demo: forja-core driving a small 'Hoy' screen with a time simulator"
+default-run = "forja-demo"
+
+[workspace]
+members = ["forja-core"]
+resolver = "2"
+
+[dependencies]
+forja-core = { path = "forja-core" }
+macroquad = { version = "0.4", default-features = false }
+chrono = "0.4"
+serde_json = "1"
+# Meal photo → Claude
+rfd = "0.15"
+ureq = { version = "2", features = ["json"] }
+base64 = "0.22"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp"] }
+keyring = { version = "3", features = ["windows-native"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging"] }
+
+[profile.dev.package."*"]
+opt-level = 2

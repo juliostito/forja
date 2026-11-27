@@ -1,0 +1,440 @@
+{
+    "version":  1,
+    "values":  [
+                   {
+                       "name":  "start weight",
+                       "group":  "profile",
+                       "value":  104,
+                       "unit":  "kg",
+                       "source":  "brief §2"
+                   },
+                   {
+                       "name":  "height",
+                       "group":  "profile",
+                       "value":  173,
+                       "unit":  "cm",
+                       "source":  "brief §2"
+                   },
+                   {
+                       "name":  "age",
+                       "group":  "profile",
+                       "value":  30,
+                       "unit":  "years",
+                       "source":  "brief §2"
+                   },
+                   {
+                       "name":  "training time",
+                       "group":  "profile",
+                       "value":  "07:00 Mon/Tue/Thu/Fri",
+                       "source":  "brief §2"
+                   },
+                   {
+                       "name":  "load step",
+                       "group":  "progression",
+                       "value":  1.25,
+                       "unit":  "kg",
+                       "source":  "brief §3.6"
+                   },
+                   {
+                       "name":  "technique ladder at equipment max",
+                       "group":  "progression",
+                       "value":  "tempo 4 s \u003e pause 2 s \u003e 1.5 reps \u003e unilateral",
+                       "source":  "brief §3.6"
+                   },
+                   {
+                       "name":  "cycle length",
+                       "group":  "plan",
+                       "value":  18,
+                       "unit":  "weeks",
+                       "source":  "brief §3.6"
+                   },
+                   {
+                       "name":  "deload weeks",
+                       "group":  "plan",
+                       "value":  "9 and 18",
+                       "source":  "brief §3.6"
+                   },
+                   {
+                       "name":  "deload sets",
+                       "group":  "plan",
+                       "value":  "half, rounded up",
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "strength test every",
+                       "group":  "plan",
+                       "value":  4,
+                       "unit":  "weeks",
+                       "source":  "brief §3.6"
+                   },
+                   {
+                       "name":  "rest between sets",
+                       "group":  "plan",
+                       "value":  90,
+                       "unit":  "s",
+                       "source":  "brief §3.4"
+                   },
+                   {
+                       "name":  "rest isometrics",
+                       "group":  "plan",
+                       "value":  45,
+                       "unit":  "s",
+                       "source":  "brief §3.4"
+                   },
+                   {
+                       "name":  "initial heat",
+                       "group":  "forge",
+                       "value":  50,
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "heat per session",
+                       "group":  "forge",
+                       "value":  25,
+                       "source":  "brief §5.2"
+                   },
+                   {
+                       "name":  "heat per missed planned day",
+                       "group":  "forge",
+                       "value":  -35,
+                       "source":  "brief §5.2"
+                   },
+                   {
+                       "name":  "heat per idle day",
+                       "group":  "forge",
+                       "value":  -5,
+                       "source":  "brief §5.2"
+                   },
+                   {
+                       "name":  "revival window",
+                       "group":  "forge",
+                       "value":  2,
+                       "unit":  "days",
+                       "source":  "brief §5.2 (48 h)"
+                   },
+                   {
+                       "name":  "heat after revival",
+                       "group":  "forge",
+                       "value":  50,
+                       "source":  "brief §5.2"
+                   },
+                   {
+                       "name":  "expired revival breaks streak",
+                       "group":  "forge",
+                       "value":  true,
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "flame tiers",
+                       "group":  "forge",
+                       "value":  "1, 4, 8, 16, 24, 52",
+                       "unit":  "sessions",
+                       "source":  "brief §4.2"
+                   },
+                   {
+                       "name":  "skip reason minimum",
+                       "group":  "forge",
+                       "value":  25,
+                       "unit":  "characters",
+                       "source":  "brief §3.4"
+                   },
+                   {
+                       "name":  "xp full session",
+                       "group":  "xp",
+                       "value":  100,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp minimum session",
+                       "group":  "xp",
+                       "value":  50,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp recovered session",
+                       "group":  "xp",
+                       "value":  80,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp per set",
+                       "group":  "xp",
+                       "value":  5,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp warm-up",
+                       "group":  "xp",
+                       "value":  15,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp stretches",
+                       "group":  "xp",
+                       "value":  15,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp per habit",
+                       "group":  "xp",
+                       "value":  5,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp perfect habit day",
+                       "group":  "xp",
+                       "value":  25,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp weigh-in",
+                       "group":  "xp",
+                       "value":  10,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp strength test",
+                       "group":  "xp",
+                       "value":  60,
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "xp to next level",
+                       "group":  "xp",
+                       "value":  "round(120 * n^1.35)",
+                       "source":  "brief §5.1"
+                   },
+                   {
+                       "name":  "session xp cap (base)",
+                       "group":  "xp",
+                       "value":  250,
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "heat multiplier \u003c30 / 30-69 / 70-89 / \u003e=90",
+                       "group":  "xp",
+                       "value":  "0.8 / 1 / 1.25 / 1.5",
+                       "source":  "brief §5.2"
+                   },
+                   {
+                       "name":  "short session threshold",
+                       "group":  "xp",
+                       "value":  8,
+                       "unit":  "min",
+                       "source":  "brief §5.8"
+                   },
+                   {
+                       "name":  "short session xp factor",
+                       "group":  "xp",
+                       "value":  0.5,
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "apple watch bonus",
+                       "group":  "xp",
+                       "value":  1.1,
+                       "source":  "brief §5.8"
+                   },
+                   {
+                       "name":  "pain go limit",
+                       "group":  "safety",
+                       "value":  3,
+                       "unit":  "/10",
+                       "source":  "brief §3.5"
+                   },
+                   {
+                       "name":  "red flag validity",
+                       "group":  "safety",
+                       "value":  14,
+                       "unit":  "days",
+                       "estimated":  true
+                   },
+                   {
+                       "name":  "activity factor",
+                       "group":  "nutrition",
+                       "value":  1.45,
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "deficit",
+                       "group":  "nutrition",
+                       "value":  600,
+                       "unit":  "kcal",
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "protein target",
+                       "group":  "nutrition",
+                       "value":  145,
+                       "unit":  "g",
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "fat share",
+                       "group":  "nutrition",
+                       "value":  28,
+                       "unit":  "%",
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "water",
+                       "group":  "nutrition",
+                       "value":  0.033,
+                       "unit":  "L/kg",
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "plateau kcal change",
+                       "group":  "nutrition",
+                       "value":  -150,
+                       "unit":  "kcal",
+                       "source":  "brief §3.7"
+                   },
+                   {
+                       "name":  "steps goal start / step / cap",
+                       "group":  "habits",
+                       "value":  "6000 / +1000 every 2 weeks / 10000",
+                       "source":  "brief §3.4"
+                   },
+                   {
+                       "name":  "mark set",
+                       "group":  "controls",
+                       "value":  "click set circle or Space",
+                       "source":  "demo design (brief §3.4 asks for tap-to-log sets)"
+                   },
+                   {
+                       "name":  "next morning (time simulator)",
+                       "group":  "controls",
+                       "value":  "N",
+                       "source":  "demo design (brief §10 developer time simulator)"
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "kg",
+                       "name":  "dumbbell handle",
+                       "source":  "user answer (iron handles ~1.5 kg)",
+                       "value":  1.5
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "count",
+                       "name":  "plates 2.5 kg",
+                       "source":  "user answer",
+                       "value":  4
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "count",
+                       "name":  "plates 2 kg",
+                       "source":  "user answer",
+                       "value":  6
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "count",
+                       "name":  "plates 1.25 kg",
+                       "source":  "user answer",
+                       "value":  6
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "count",
+                       "name":  "plates per handle (sleeve)",
+                       "estimated":  true,
+                       "value":  8
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "kg",
+                       "name":  "max per dumbbell as a pair",
+                       "source":  "computed from inventory; forja-core profile test",
+                       "value":  16.25
+                   },
+                   {
+                       "group":  "equipment",
+                       "unit":  "kg",
+                       "name":  "max single dumbbell",
+                       "source":  "computed from inventory with 8-plate sleeve; profile test",
+                       "value":  19.5
+                   },
+                   {
+                       "group":  "nutrition",
+                       "unit":  "kcal",
+                       "name":  "initial kcal target",
+                       "source":  "brief formula, confirmed by the user",
+                       "value":  2250
+                   },
+                   {
+                       "group":  "detector",
+                       "unit":  "deg",
+                       "name":  "pose lying threshold (mean torso tilt)",
+                       "estimated":  true,
+                       "value":  55
+                   },
+                   {
+                       "group":  "detector",
+                       "name":  "rep filter alpha",
+                       "estimated":  true,
+                       "value":  0.35
+                   },
+                   {
+                       "group":  "detector",
+                       "name":  "rep hysteresis low/high",
+                       "estimated":  true,
+                       "value":  "0.3 / 0.7"
+                   },
+                   {
+                       "group":  "detector",
+                       "unit":  "torso lengths above knee",
+                       "name":  "squat depth tolerance",
+                       "estimated":  true,
+                       "value":  0.15
+                   },
+                   {
+                       "group":  "detector",
+                       "unit":  "deg",
+                       "name":  "posture warning neck/upper back angle",
+                       "estimated":  true,
+                       "value":  35
+                   },
+                   {
+                       "group":  "detector",
+                       "name":  "auto-log confidence",
+                       "estimated":  true,
+                       "value":  0.6
+                   },
+                   {
+                       "group":  "meals",
+                       "name":  "meal photo model",
+                       "estimated":  true,
+                       "value":  "claude-opus-5-5"
+                   },
+                   {
+                       "group":  "meals",
+                       "unit":  "px",
+                       "name":  "meal photo max side",
+                       "estimated":  true,
+                       "value":  1280
+                   },
+                   {
+                       "group":  "meals",
+                       "unit":  "kcal",
+                       "name":  "credible meal kcal range",
+                       "estimated":  true,
+                       "value":  "1-5000"
+                   },
+                   {
+                       "group":  "meals",
+                       "name":  "meal protein counts for protein habit",
+                       "estimated":  true,
+                       "value":  true
+                   },
+                   {
+                       "group":  "animation",
+                       "unit":  "ids (33 exercises + 28 warm-up/stretch items)",
+                       "name":  "exercise animations",
+                       "source":  "forja-core motion test every_exercise_and_routine_item_has_its_own_animation",
+                       "value":  61
+                   }
+               ]
+}
